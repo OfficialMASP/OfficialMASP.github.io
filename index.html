@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title> MASP </title>
+  <link rel="icon" type="image/x-icon" href="assets/brainfavicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
+      <a class="navbar-brand" href="#page-top">M.A.S.P.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#exploration"> Exploration</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#MLModels">
+              ML Models</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conclusions">Conclusions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#meettheteam">Meet the Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header-->
+  <section class="bg-image">
+    <!--<header class="bg-primary bg-gradient text-white">-->
+    <div class="container px-4 text-center">
+      <h1 class="fw-bolder">
+        <font color="white">Welcome to M.A.S.P.!<br> (Morbus Alzheimerii Sistēma Prognōstica)
+      </h1>
+      <br>
+      <p class="lead">A state-of-the-art prediction system that determines if you have Alzheimer's disease</p>
+      </font>
+      <br>
+      <a class="btn btn-lg btn-light" href="#about">View Now!</a>
+    </div>
+    </header>
+</body>
+
+</html>
+</section>
+<!-- Why predict Alzheimer's disease? section-->
+<section class="bg-green" id="about">
+  <div class="container px-4">
+    <div class="row gx-4 justify-content-center">
+      <div class="col-lg-8">
+        <h2>Why Predict Alzheimer's Disease?</h2>
+        <p class="lead">This is a great place to initially find out about your situation relating to Alzheimer's
+          disease. This system will use an array of highly precise AI models to best possibly answer whether or not you
+          have Alzheimer's. The system was trained on <a
+            href="https://www.kaggle.com/datasets/brsdincer/alzheimer-features?select=alzheimer.csv"> this Kaggle
+            dataset.</a>The system takes inputs about your demographics and brain features (age, years of education,
+          socioeconomic status, estimated total intracranial volume, atlas scaling factor, etc.) and outputs that you
+          either have Alzheimer's or do not. </p>
+      </div>
+      <div class="col-lg-8">
+        <p class="lead"> <br>Alzheimer's disease is a progressive disease in which brain cell connections and the cells
+          themselves degenerate and die, eventually destroying memory and other important mental functions. Memory loss
+          and confusion are the main symptoms. No cure exists, but medications and management strategies may temporarily
+          improve symptoms. <u>When Alzheimer's is diagnosed early on, treatments are more likely to be effective! </u>
+          <br><br>Some notable statistics about
+          Alzheimer's disease:
+        </p>
+        <ul>
+          <li>More than 6 million Americans of all ages have Alzheimer's. </li>
+          <li>About 1 in 9 people age 65 and older has Alzheimer's.</li>
+          <li>Almost 2 out of 3 Americans with Alzheimer's are women.</li>
+          <li>Deaths from Alzheimer’s have more than doubled between 2000 and 2019.</li>
+          <li>Source: Alzheimer's Association</li>
+        </ul>
+        <h4> Resources for Additional Information:</h3>
+          <ul>
+            <li><a
+                href="https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447?utm_source=Google&utm_medium=abstract&utm_content=Alzheimers-disease&utm_campaign=Knowledge-panel">Mayo
+                Clinic</a></li>
+            <li><a href="https://www.youtube.com/watch?v=wfLP8fFrOp0">YouTube Video by Alzheimer's Society</a></li>
+          </ul>
+          <center><img class='radius'
+              src="https://www.alzheimersla.org/wp-content/uploads/2021/04/Understanding-Memory-Loss-Alzheimers-disease-the-basics.jpg.png"
+              alt="Brain" height=350 width=380></center>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Exploratory Data Analysis & Visualizations section-->
+<section class="bg-pink" id="exploration">
+  <div class="container px-4">
+    <div class="row gx-4 justify-content-center">
+      <div class="col-lg-8">
+        <h2>Exploration</h2>
+        <ul>
+          <div class="container">
+            <h3>Pie Chart</h3>
+            <iframe width="600" height="600" title="Correlation Table of Features"
+              src="assets/images/pie_groups.html"></iframe>
+          </div>
+          <h6>This pie chart supports the fact that women are more likely to get Alzheimer's disease.</h6>
+          <br>
+           <h3>MMSE vs. Age Scatter Plot</h3>
+            <iframe scrolling ="no" width="600" height="600" title="Correlation Table of Features"
+              src="assets/images/MMSE_Age.html"></iframe>
+          <h6>This scatter plot shows how more people in the MMSE range of 25 and have Alzheimer's disease. It also shows how after the age of 90 you are less likely to get Alzheimer's.</h6>
+          <br>
+          <div class="image-container">
+            <h3>Age and Group Histogram</h3>
+            <iframe scrolling="no" width="1200" height="600" src="assets/images/hist.html"></iframe>
+          </div>
+          <h6>This histogram shows that most Alzheimer's disease cases appear in people aged 65 years old through 85 years old.</h6>
+          <br>
+          <div class="container">
+            <h3>3D Scatter Plot</h3>
+            <iframe scrolling="no" width="600" height="600" src="assets/images/scatter3D.html"></iframe>
+          </div>
+          <h6>This 3D scatter plot shows that, as eTIV goes up, ASF goes down and vice versa. Also, nWBV ranges from
+            approximately 0.65 to 0.83.</h6>
+          <br>
+          <div class="container">
+            <h3>Violin Graph</h3>
+            <iframe scrolling="no" width="800" height="600" src="assets/images/violin.html"></iframe>
+          </div>
+          <h6>This violin graph shows that any person that has a MMSE value that is lower than 25 has Alzheimer's
+            disease. In addition, any person that has a CDR value of 1 or more has Alzheimer's disease, but they can have a lower value and still be diagnosed with the disease. On the other hand, any person that has a CDR score of 0 does not have Alzheimer's disease. On the other hand, a person can have a CDR value of 0.5 and not be diagnosed with the disease.</h6>
+          <br>
+          <h3>Heatmap</h3>
+            <iframe scrolling="no" width="800" height="600" src="assets/images/heatmap.html"></iframe>
+          <h6>This heatmap analyzes the mathematical relationships between all the variables used by the ML models to predict whether a patient has Alzheimer's disease or not. The closer a number is to 1, the more closely related the two variables that made that number are. On the other hand, the opposite effect happens the closer a number is to -1. The audience should pay special attention to the 'Outcome' variable, which is the one that says whether a patient has Alzheimer's disease or not. Clinical dementia rating (CDR) and mini mental state examination (MMSE) seem to be the most influential features on whether or not a person has Alzheimer's.</h6>
+      </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ML Models section-->
+<section class="bg-blue" id="MLModels">
+  <div class="container px-4">
+    <div class="row gx-4 justify-content-center">
+      <div class="col-lg-8">
+        <h2> Machine Learning Models</h2>
+        <p class="lead">We used a variety of different machine learning models with various results including: <br>
+        <ul>
+          <h6>K-Nearest Neighbors (KNN):</h6> KNN works by finding the distances between a new data point and old data points. Depending on what the closest old data points are classified as, the new point will get classified accordingly. The amount of old data points it will look at depends on the specified number K. This model had a 64% accuracy.
+
+          <br><br>
+          <div class="container">
+            <h6>KNN Results</h6>
+            <img width="60%" height="50%" src="assets/images/KNN_confusion.jpg">
+          </div>
+          <br><br>
+          <h6>Support Vector Classifiers (SVC):</h6> SVC maps the data to a higher dimensional space and then finds
+          the optimal hyperplane that has the highest margins between the data points and the hyperplane. This model
+          had a 98% accuracy.
+          <br><br>
+          <div class="container">
+            <h6>SVC Results</h6>
+            <img width="60%" height="50%" src="assets/images/confusionMatrix.jpg">
+          </div>
+          <br><br>
+          <h6>Random Forest Classifier (RFC):</h6> RFC creates a randomly generated number of datasets that vary in
+          size. It creates a decision tree from each new dataset. It then collects votes from each decision tree for
+          which category the new data point should belong in. Whatever category has the most votes, the data point
+          gets placed in that category. This model had a 100% accuracy.
+          <br><br>
+          <div class="container">
+            <h6>RFC Results</h6>
+            <img width="60%" height="50%" src="assets/images/RFC_confusion.png">
+          </div>
+          <br><br>
+          <h6>Logistic Regression Classifier (LRC):</h6> LRC makes predictions based on the Sigmoid function which is a
+          squiggles-like line. Despite the fact that it returns the probabilities, the final output would be a label
+          assigned by comparing the likelihood with a threshold, which makes it eventually a classification algorithm.
+          This model had a 98% accuracy.
+          <br><br>
+          <div class="container">
+            <h6>LRC Results</h6>
+            <img width="60%" height="50%" src="assets/images/confusionMatrix.jpg">
+          </div>
+          <br><br>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Conclusions section-->
+<section class="bg-coral" id="conclusions">
+  <div class="container px-4">
+    <div class="row gx-4 justify-content-center">
+      <div class="col-lg-8">
+        <h2>Conclusions</h2>
+        <p class="lead">We were not expecting our models to be so accurate when predicting whether or not a person had
+          Alzheimer's based on our training data. We were pleasantly surprised to see such high accuracies, and further
+          hyperparameter tuning for these models ensured that our models were more generally applicable to other data.
+          We expected RFC to be our best machine learning model for this classification system, so the fact that SVC and
+          LRC were nearly just as accurate was interesting. Perhaps because our dataset was small (only 317 instances to
+          train and test on), these models ended up being highly accurate. Demographic, socioeconomic, and brain
+          features (such as estimated total intracranial volume and normalize whole brain volume) prove to be highly
+          effective in determining whether people have Alzheimer's disease. <br><br> Such AI detection systems are easy
+          to use and can help patients seek treatments early -- before Alzheimer's disease causes serious harm.
+        </p>
+
+        <div class="container">
+          <h3>Conclusion Scores</h3>
+          <img width="90%" height="40%" title="Correlation Table of Features"
+            src="assets/images/bigger_conclusion_scores.jpg">
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Meet the team section-->
+<section class="bg-white" id="meettheteam">
+  <div class="container px-4">
+    <div class="row gx-4 justify-content-center">
+      <div class="col-lg-8">
+        <h2>Meet the Team!</h2>
+        <p class="lead">We are a team of high schoolers...blah blah blah <br>
+        </p>
+        <p class="lead">Chetan Khairnar (Instructor): Short bio <br>
+        </p>
+        </p>
+        <p class="lead">Ashni Kumar (Product Manager): Short bio <br>
+        </p>
+        </p>
+        </p>
+        <p class="lead">Heath Fry (Machine Learning Engineer): Short bio <br>
+        </p>
+        <p class="lead">Francisco Apraiz (Data Scientist): Short bio <br>
+        </p>
+        <p class="lead">Jacob Hanson (Data Scientist): Short bio <br>
+        </p>
+        </p>
+        <p class="lead">Isaiah Johnson (Web Designer): Short bio <br>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+  <div class="container px-4">
+    <p class="m-0 text-center text-white">Copyright &copy; MASP 2023</p>
+  </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
